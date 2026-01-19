@@ -61,6 +61,21 @@ npm run build
 npm start
 ```
 
+### 6. Deploying to Vercel (Production)
+
+Since `.env.local` is ignored by Git (for security), you must set up your environment variables manually on Vercel:
+
+1.  Push your code to GitHub.
+2.  Import the project in [Vercel](https://vercel.com/new).
+3.  **CRITICAL STEP**: Before deploying (or in **Settings** > **Environment Variables**), add the following:
+    *   `SMTP_HOST`: `smtp.gmail.com`
+    *   `SMTP_PORT`: `587`
+    *   `SMTP_USER`: `your-email@gmail.com`
+    *   `SMTP_PASS`: `your-app-password`
+4.  Deploy!
+
+If the variables are missing, the contact form **will not send emails**.
+
 ## 📂 Project Structure
 
 *   `/app` - Main application routes (`page.tsx`, `globals.css`).

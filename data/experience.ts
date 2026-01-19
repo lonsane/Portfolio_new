@@ -17,7 +17,7 @@ export const experience = [
     id: 3,
     company: "Intrainz",
     role: "Web developer",
-    date: "Dec 2014 - Jan 2025",
+    date: "Dec 2024 - Jan 2025",
     link: "https://www.lmsintrainz.com/",
   },
 ];
