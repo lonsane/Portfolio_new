@@ -15,16 +15,17 @@ export default function BlogSection() {
     const containerRef = useRef(null);
 
     useGSAP(() => {
-        gsap.from(".blog-card", {
+        gsap.from(".blog-card-wrapper", {
             scrollTrigger: {
                 trigger: containerRef.current,
-                start: "top 90%",
+                start: "top 80%",
             },
-            y: 40,
+            x: 100, // Slide in from right
             opacity: 0,
-            duration: 1,
-            stagger: 0.15,
+            duration: 0.8,
+            stagger: 0.2,
             ease: "power3.out",
+            clearProps: "all"
         });
     }, { scope: containerRef });
 
@@ -35,8 +36,10 @@ export default function BlogSection() {
                 <h2 className="text-7xl font-heading font-extrabold text-zinc-500 mb-12 uppercase">THOUGHTS</h2>
 
                 <div className="flex flex-col gap-4">
-                    {blogs.slice(0, 2).map((blog) => (
-                        <BlogCard key={blog.id} blog={blog} />
+                    {blogs.map((blog) => (
+                        <div key={blog.id} className="blog-card-wrapper">
+                            <BlogCard blog={blog} />
+                        </div>
                     ))}
                 </div>
             </div>
