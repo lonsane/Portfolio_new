@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Linkedin, Mail, Instagram, Github, Flame } from "lucide-react";
+import { Linkedin, Mail, Instagram, Github, Flame, ArrowUpRight } from "lucide-react";
 
 const SocialIcon = ({ Icon, href }: { Icon: any; href: string }) => (
     <a
@@ -68,6 +68,17 @@ export default function LeftProfileCard() {
                     <p className="text-gray-500 text-sm font-medium leading-relaxed max-w-[220px] mb-auto">
                         A Software Engineer who has developed countless innovative solutions.
                     </p>
+
+                    {/* Resume Link */}
+                    <a
+                        href="/assets/CV/Onkar(CV).pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-6 px-6 py-2 bg-accent-orange text-white text-sm font-bold rounded-full hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/30 flex items-center gap-2"
+                    >
+                        <span>View Resume</span>
+                        <ArrowUpRight size={16} />
+                    </a>
 
                     {/* Social Icons */}
                     <div className="flex items-center justify-center gap-6 mt-8 mb-4 w-full">

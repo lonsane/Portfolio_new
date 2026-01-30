@@ -31,9 +31,9 @@ export default function RecentProjects() {
 
     return (
         <SectionWrapper id="projects">
-            <div ref={containerRef}>
-                <h2 className="text-7xl font-heading font-extrabold text-white mb-2 uppercase">RECENT</h2>
-                <h2 className="text-7xl font-heading font-extrabold text-zinc-500 mb-12 uppercase">PROJECTS</h2>
+            <div ref={containerRef} className="mt-20 lg:mt-0">
+                <h2 className="text-5xl md:text-7xl font-heading font-extrabold text-white mb-2 uppercase">RECENT</h2>
+                <h2 className="text-5xl md:text-7xl font-heading font-extrabold text-zinc-500 mb-8 md:mb-12 uppercase">PROJECTS</h2>
 
                 <div className="flex flex-col gap-6">
                     {projects.map((project) => (

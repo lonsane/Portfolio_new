@@ -49,10 +49,10 @@ export default function ContactSection() {
     return (
         <SectionWrapper id="contact" className="pb-32">
             <div ref={containerRef}>
-                <h2 className="contact-anim text-7xl font-heading font-extrabold text-white mb-2 uppercase leading-[0.9]">
+                <h2 className="contact-anim text-5xl md:text-7xl font-heading font-extrabold text-white mb-2 uppercase leading-[0.9]">
                     LET’S WORK
                 </h2>
-                <h2 className="contact-anim text-7xl font-heading font-extrabold text-zinc-500 mb-12 uppercase leading-[0.9]">
+                <h2 className="contact-anim text-5xl md:text-7xl font-heading font-extrabold text-zinc-500 mb-8 md:mb-12 uppercase leading-[0.9]">
                     TOGETHER
                 </h2>
 

@@ -1,10 +1,10 @@
 export const projects = [
   {
     id: 1,
-    title: "User persona",
-    subtitle: "User persona generation using AI",
-    image: "/assets/project/user-persona.png",
-    link: "#", // No link provided for this one
+    title: "QAChatbot",
+    subtitle: "Intelligent chatbot that allows users to upload a file and ask questions based on its content.",
+    image: "/assets/project/user-persona.png", // Keeping the same image for now as none was provided, user can update later
+    link: "https://github.com/lonsane/QAChatbot",
   },
   {
     id: 2,
